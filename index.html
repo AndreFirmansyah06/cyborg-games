@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
     <style type="text/tailwindcss"></style>
     <title>Cyborg Games</title>
   </head>
@@ -12,12 +16,14 @@
       class="center-content max-w-[90%] box-border flex flex-col justify-start mt-10 p-0 font-mono uppercase"
     >
       <header
-        class="grid grid-cols-[1fr_1fr_1fr] lg:grid-cols-[1fr_1fr_2fr] w-[90%] bg-[#1f2128] top-0 p-5 text-xl fixed"
+        class="grid grid-cols-3 w-full bg-[#1f2128] top-0 p-5 left-0 text-xl fixed"
       >
-        <div class="logo flex items-center text-3xl text-pink-700 font-bold">
+        <div
+          class="logo flex items-center text-3xl w-fit text-pink-700 font-bold"
+        >
           Cyborg
         </div>
-        <div class="search relative bg-[#2A2B2F] rounded-3xl">
+        <div class="search relative bg-[#2A2B2F] rounded-3xl hidden md:flex">
           <span
             class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
           >
@@ -41,16 +47,42 @@
             class="w-full pl-10 pr-4 py-2 focus:outline-none text-white"
           />
         </div>
-        <nav class="flex justify-end items-center text-gray-500">
-          <ul
-            class="flex flex-col justify-center items-center lg:flex lg:flex-row gap-3 cursor-pointer"
-          >
-            <li class="hover:text-[#EC6090] hidden lg:flex">home</li>
-            <li class="hover:text-[#EC6090] hidden lg:flex">browse</li>
-            <li class="hover:text-[#EC6090] hidden lg:flex">details</li>
-            <li class="hover:text-[#EC6090] hidden lg:flex">streams</li>
-            <li class="hover:text-[#EC6090] hidden lg:flex">profile</li>
-            <li class="flex lg:hidden" onclick="toggleMenu()">
+        <nav class="flex justify-end items-center col-start-3 text-gray-500">
+          <ul class="flex justify-center items-center gap-3 cursor-pointer">
+            <li
+              class="hover:text-[#EC6090] hover:px-2 hover:scale-120 transition duration-150 hidden xl:flex"
+            >
+              home
+            </li>
+            <li
+              class="hover:text-[#EC6090] hover:px-2 hover:scale-120 transition duration-150 hidden xl:flex"
+            >
+              browse
+            </li>
+            <li
+              class="hover:text-[#EC6090] hover:px-2 hover:scale-120 transition duration-150 hidden xl:flex"
+            >
+              details
+            </li>
+            <li
+              class="hover:text-[#EC6090] hover:px-2 hover:scale-120 transition duration-150 hidden xl:flex"
+            >
+              streams
+            </li>
+            <li
+              class="hover:text-[#EC6090] hover:px-2 hover:scale-120 transition duration-150 hidden xl:flex"
+            >
+              profile
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flex items-center md:hidden"
+                ><i
+                  class="bx bx-search text-white text-2xl"
+                  onclick="toggleSearch()"
+                ></i
+              ></a>
+            </li>
+            <li class="flex xl:hidden" onclick="toggleMenu()">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -64,25 +96,25 @@
               </svg>
             </li>
           </ul>
-          <!-- <button id="hamburger" class="lg:hidden p-2" onclick="toggleMenu()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-6 h-6 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button> -->
+          <div
+            class="bg-[#2A2B2F] absolute w-full top-0 left-0 h-full hidden justify-center p-3 gap-3"
+            id="responsiveSearch"
+          >
+            <input
+              type="text"
+              placeholder="Type Something"
+              class="focus:outline-none p-5 border border-[#EC6090] text-white rounded-lg w-[80%]"
+            />
+            <a href="javascript:void(0)" class="flex items-center lg:hidden">
+              <i
+                class="bx bx-x text-white text-2xl"
+                onclick="toggleSearch()"
+              ></i>
+            </a>
+          </div>
         </nav>
         <ul
-          class="hidden flex-col text-center col-start-2 p-10 text-[#666]"
+          class="flex-col text-center col-start-2 py-5 text-[#666] max-h-0 overflow-hidden w-full transition-all duration-1000 ease-out opacity-0"
           id="responsive-navbar"
         >
           <li class="border-b-[#EC6090] border-b-1">home</li>
@@ -473,124 +505,66 @@
         <div
           class="library w-[90%] bg-[#1f2128] rounded-4xl mt-10 pt-20 pb-20 pl-3"
         >
-          <div class="title  text-4xl text-center lg:text-left font-extrabold gap-3">
-            <p class="text-white">your gaming <span class="text-[#EC6090]">library</span></p>
+          <div
+            class="title text-4xl text-center lg:text-left font-extrabold gap-3"
+          >
+            <p class="text-white">
+              your gaming <span class="text-[#EC6090]">library</span>
+            </p>
           </div>
           <div class="list-wrapper flex flex-col gap-5 pt-10">
-            <div
-              class="list grid  grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2 border-b-white border-b-1"
-            >
-              <div class="name flex flex-col lg:flex-row justify-center items-center">
-                <div class="image">
-                  <img
-                    class="w-30 rounded-4xl object-cover shrink-0"
-                    src="image/masbro.jpeg"
-                    alt=""
-                  />
-                </div>
-                <div class="caption flex flex-col justify-center ml-3">
-                  <p class="text-white font-extrabold">dota 2</p>
-                  <p class="text-[#666] text-sm">sandbox</p>
-                </div>
-              </div>
-              <div class="detail flex flex-col lg:flex-row justify-center lg:justify-around items-center">
-                <div class="date">
-                  <p class="text-white">date added</p>
-                  <p class="text-[#666] text-sm">24-08-2020</p>
-                </div>
-                <div class="hours">
-                  <p class="text-white">hours played</p>
-                  <p class="text-[#666] text-sm">200 h 22 mins</p>
-                </div>
-                <div class="currently">
-                  <p class="text-white">currently</p>
-                  <p class="text-[#666] text-sm">download</p>
-                </div>
-              </div>
-              <div class="status flex justify-center items-center">
-                <a
-                  class="rounded-3xl cursor-pointer border-2 border-[#EC6090] pl-6 pr-6 pt-2 pb-2 text-[#666] hover:bg-[#EC6090] hover:text-white"
-                  href=""
-                  >Download</a
-                >
-              </div>
-            </div>
-            <div
-            class="list grid  grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2 border-b-white border-b-1"
-          >
-            <div class="name flex flex-col lg:flex-row justify-center items-center">
-              <div class="image">
-                <img
-                  class="w-30 rounded-4xl object-cover shrink-0"
-                  src="image/masbro.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="caption flex flex-col justify-center ml-3">
-                <p class="text-white font-extrabold">dota 2</p>
-                <p class="text-[#666] text-sm">sandbox</p>
-              </div>
-            </div>
-            <div class="detail flex flex-col lg:flex-row justify-center lg:justify-around items-center">
-              <div class="date">
-                <p class="text-white">date added</p>
-                <p class="text-[#666] text-sm">24-08-2020</p>
-              </div>
-              <div class="hours">
-                <p class="text-white">hours played</p>
-                <p class="text-[#666] text-sm">200 h 22 mins</p>
-              </div>
-              <div class="currently">
-                <p class="text-white">currently</p>
-                <p class="text-[#666] text-sm">download</p>
-              </div>
-            </div>
-            <div class="status flex justify-center items-center">
-              <a
-                class="rounded-3xl cursor-pointer border-2 border-[#EC6090] pl-6 pr-6 pt-2 pb-2 text-[#666] hover:bg-[#EC6090] hover:text-white"
-                href=""
-                >Download</a
+            <div class="list-item">
+
+              <div
+                class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2 border-b-white border-b-1"
               >
+                <div
+                  class="name flex flex-col lg:flex-row justify-start items-start"
+                >
+                  <div class="image">
+                    <img
+                      class="w-30 rounded-4xl object-cover shrink-0"
+                      src="image/masbro.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="caption flex flex-col justify-center ml-3">
+                    <p class="text-white font-extrabold">dota 2</p>
+                    <p class="text-[#666] text-sm">sandbox</p>
+                  </div>
+                </div>
+                <div
+                  class="detail flex flex-col lg:flex-row justify-center lg:justify-around items-center"
+                >
+                  <div class="date">
+                    <p class="text-white">date added</p>
+                    <p class="text-[#666] text-sm">24-08-2020</p>
+                  </div>
+                  <div class="hours">
+                    <p class="text-white">hours played</p>
+                    <p class="text-[#666] text-sm">200 h 22 mins</p>
+                  </div>
+                  <div class="currently">
+                    <p class="text-white">currently</p>
+                    <p class="text-[#666] text-sm">download</p>
+                  </div>
+                </div>
+                <div class="status flex justify-center items-center">
+                  <a
+                    class="rounded-3xl cursor-pointer border-2 border-[#EC6090] pl-6 pr-6 pt-2 pb-2 text-[#666] hover:bg-[#EC6090] hover:text-white"
+                    href=""
+                    >Download</a
+                  >
+                </div>
+                <div class="flex justify-end items-center xl:hidden">
+                  <i
+                    class="bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
+                    id="chevron"
+                    onclick="toggleChevron()"
+                  ></i>
+                </div>
+              </div>
             </div>
-          </div>
-          <div
-          class="list grid  grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2 border-b-white border-b-1"
-        >
-          <div class="name flex flex-col lg:flex-row justify-center items-center">
-            <div class="image">
-              <img
-                class="w-30 rounded-4xl object-cover shrink-0"
-                src="image/masbro.jpeg"
-                alt=""
-              />
-            </div>
-            <div class="caption flex flex-col justify-center ml-3">
-              <p class="text-white font-extrabold">dota 2</p>
-              <p class="text-[#666] text-sm">sandbox</p>
-            </div>
-          </div>
-          <div class="detail flex flex-col lg:flex-row justify-center lg:justify-around items-center">
-            <div class="date">
-              <p class="text-white">date added</p>
-              <p class="text-[#666] text-sm">24-08-2020</p>
-            </div>
-            <div class="hours">
-              <p class="text-white">hours played</p>
-              <p class="text-[#666] text-sm">200 h 22 mins</p>
-            </div>
-            <div class="currently">
-              <p class="text-white">currently</p>
-              <p class="text-[#666] text-sm">download</p>
-            </div>
-          </div>
-          <div class="status flex justify-center items-center">
-            <a
-              class="rounded-3xl cursor-pointer border-2 border-[#EC6090] pl-6 pr-6 pt-2 pb-2 text-[#666] hover:bg-[#EC6090] hover:text-white"
-              href=""
-              >Download</a
-            >
-          </div>
-        </div>
           </div>
         </div>
       </main>
@@ -605,12 +579,33 @@
       function toggleMenu() {
         <!-- event.preventDefault(); // hindari reload atau blink -->
         const nav = document.getElementById("responsive-navbar");
-        nav.classList.toggle("hidden");
+        if (nav.classList.contains("max-h-0")) {
+          nav.classList.remove("max-h-0");
+          nav.classList.add("max-h-[400px]");
+          nav.classList.remove("opacity-0");
+          nav.classList.add("opacity-100");
+        } else {
+          nav.classList.remove("max-h-[400px]");
+          nav.classList.add("max-h-0");
+          nav.classList.remove("opacity-100");
+          nav.classList.add("opacity-0");
+        }
       }
 
       function hideMenu() {
         const nav = document.getElementById("responsive-navbar");
         nav.classList.remove("show");
+      }
+
+      function toggleSearch() {
+        const nav = document.getElementById("responsiveSearch");
+        nav.classList.toggle("hidden");
+        nav.classList.toggle("flex");
+      }
+
+      function toggleChevron() {
+        const chev = document.getElementById("chevron");
+        chev.classList.toggle("rotate-180");
       }
     </script>
   </body>
