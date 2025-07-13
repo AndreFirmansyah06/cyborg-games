@@ -114,7 +114,7 @@
           </div>
         </nav>
         <ul
-          class="flex-col text-center col-start-2 py-5 text-[#666] max-h-0 overflow-hidden w-full transition-all duration-1000 ease-out opacity-0"
+          class="flex-col text-center col-start-2 py-5 text-[#666] max-h-0 overflow-hidden w-full transition-all duration-1000 ease-in opacity-0"
           id="responsive-navbar"
         >
           <li class="border-b-[#EC6090] border-b-1">home</li>
@@ -513,13 +513,13 @@
             </p>
           </div>
           <div class="list-wrapper flex flex-col gap-5 pt-10">
-            <div class="list-item">
-
+            <div class="list-item border-b-white border-b-1">
               <div
-                class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2 border-b-white border-b-1"
+                class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
               >
                 <div
-                  class="name flex flex-col lg:flex-row justify-start items-start"
+                  class="name flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
+                  id="imageConditional"
                 >
                   <div class="image">
                     <img
@@ -528,13 +528,15 @@
                       alt=""
                     />
                   </div>
-                  <div class="caption flex flex-col justify-center ml-3">
+                  <div
+                    class="caption hidden xl:flex flex-col justify-center ml-3"
+                  >
                     <p class="text-white font-extrabold">dota 2</p>
                     <p class="text-[#666] text-sm">sandbox</p>
                   </div>
                 </div>
                 <div
-                  class="detail flex flex-col lg:flex-row justify-center lg:justify-around items-center"
+                  class="detail hidden xl:flex flex-col lg:flex-row justify-center lg:justify-around items-center"
                 >
                   <div class="date">
                     <p class="text-white">date added</p>
@@ -549,7 +551,7 @@
                     <p class="text-[#666] text-sm">download</p>
                   </div>
                 </div>
-                <div class="status flex justify-center items-center">
+                <div class="status hidden xl:flex justify-center items-center">
                   <a
                     class="rounded-3xl cursor-pointer border-2 border-[#EC6090] pl-6 pr-6 pt-2 pb-2 text-[#666] hover:bg-[#EC6090] hover:text-white"
                     href=""
@@ -560,8 +562,221 @@
                   <i
                     class="bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
                     id="chevron"
-                    onclick="toggleChevron()"
+                    onclick="toggleChevron(this)"
                   ></i>
+                </div>
+              </div>
+              <div
+                class="detailResponsive hidden grid-cols-2 gap-3 p-10 max-h-0 overflow-hidden opacity-0 transition-all duration-900 ease-linear"
+                id="detailResponsive"
+              >
+                <div
+                  class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white font-extrabold">dota 2</p>
+                  <p class="text-[#666] text-sm">sandbox</p>
+                </div>
+                <div
+                  class="date flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">date added</p>
+                  <p class="text-[#666] text-sm">24-08-2020</p>
+                </div>
+                <div
+                  class="hours flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">hours played</p>
+                  <p class="text-[#666] text-sm">200 h 22 mins</p>
+                </div>
+                <div
+                  class="currently flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">currently</p>
+                  <p class="text-[#666] text-sm">download</p>
+                </div>
+
+                <div
+                  class="status flex justify-center items-center col-span-2 rounded-3xl cursor-pointer border-2 border-[#EC6090]"
+                >
+                  <a class="px-6 py-2 text-[#666] text-3xl" href="">Download</a>
+                </div>
+              </div>
+            </div>
+             <div class="list-item border-b-white border-b-1">
+              <div
+                class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
+              >
+                <div
+                  class="name flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
+                  id="imageConditional"
+                >
+                  <div class="image">
+                    <img
+                      class="w-30 rounded-4xl object-cover shrink-0"
+                      src="image/masbro.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="caption hidden xl:flex flex-col justify-center ml-3"
+                  >
+                    <p class="text-white font-extrabold">dota 2</p>
+                    <p class="text-[#666] text-sm">sandbox</p>
+                  </div>
+                </div>
+                <div
+                  class="detail hidden xl:flex flex-col lg:flex-row justify-center lg:justify-around items-center"
+                >
+                  <div class="date">
+                    <p class="text-white">date added</p>
+                    <p class="text-[#666] text-sm">24-08-2020</p>
+                  </div>
+                  <div class="hours">
+                    <p class="text-white">hours played</p>
+                    <p class="text-[#666] text-sm">200 h 22 mins</p>
+                  </div>
+                  <div class="currently">
+                    <p class="text-white">currently</p>
+                    <p class="text-[#666] text-sm">download</p>
+                  </div>
+                </div>
+                <div class="status hidden xl:flex justify-center items-center">
+                  <a
+                    class="rounded-3xl cursor-pointer border-2 border-[#EC6090] pl-6 pr-6 pt-2 pb-2 text-[#666] hover:bg-[#EC6090] hover:text-white"
+                    href=""
+                    >Download</a
+                  >
+                </div>
+                <div class="flex justify-end items-center xl:hidden">
+                  <i
+                    class="bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
+                    id="chevron"
+                    onclick="toggleChevron(this)"
+                  ></i>
+                </div>
+              </div>
+              <div
+                class="detailResponsive hidden grid-cols-2 gap-3 p-10 max-h-0 overflow-hidden opacity-0 transition-all duration-900 ease-linear"
+                id="detailResponsive"
+              >
+                <div
+                  class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white font-extrabold">dota 2</p>
+                  <p class="text-[#666] text-sm">sandbox</p>
+                </div>
+                <div
+                  class="date flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">date added</p>
+                  <p class="text-[#666] text-sm">24-08-2020</p>
+                </div>
+                <div
+                  class="hours flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">hours played</p>
+                  <p class="text-[#666] text-sm">200 h 22 mins</p>
+                </div>
+                <div
+                  class="currently flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">currently</p>
+                  <p class="text-[#666] text-sm">download</p>
+                </div>
+
+                <div
+                  class="status flex justify-center items-center col-span-2 rounded-3xl cursor-pointer border-2 border-[#EC6090]"
+                >
+                  <a class="px-6 py-2 text-[#666] text-3xl" href="">Download</a>
+                </div>
+              </div>
+            </div>
+             <div class="list-item border-b-white border-b-1">
+              <div
+                class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
+              >
+                <div
+                  class="name flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
+                  id="imageConditional"
+                >
+                  <div class="image">
+                    <img
+                      class="w-30 rounded-4xl object-cover shrink-0"
+                      src="image/masbro.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="caption hidden xl:flex flex-col justify-center ml-3"
+                  >
+                    <p class="text-white font-extrabold">dota 2</p>
+                    <p class="text-[#666] text-sm">sandbox</p>
+                  </div>
+                </div>
+                <div
+                  class="detail hidden xl:flex flex-col lg:flex-row justify-center lg:justify-around items-center"
+                >
+                  <div class="date">
+                    <p class="text-white">date added</p>
+                    <p class="text-[#666] text-sm">24-08-2020</p>
+                  </div>
+                  <div class="hours">
+                    <p class="text-white">hours played</p>
+                    <p class="text-[#666] text-sm">200 h 22 mins</p>
+                  </div>
+                  <div class="currently">
+                    <p class="text-white">currently</p>
+                    <p class="text-[#666] text-sm">download</p>
+                  </div>
+                </div>
+                <div class="status hidden xl:flex justify-center items-center">
+                  <a
+                    class="rounded-3xl cursor-pointer border-2 border-[#EC6090] pl-6 pr-6 pt-2 pb-2 text-[#666] hover:bg-[#EC6090] hover:text-white"
+                    href=""
+                    >Download</a
+                  >
+                </div>
+                <div class="flex justify-end items-center xl:hidden">
+                  <i
+                    class="bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
+                    id="chevron"
+                    onclick="toggleChevron(this)"
+                  ></i>
+                </div>
+              </div>
+              <div
+                class="detailResponsive hidden grid-cols-2 gap-3 p-10 max-h-0 overflow-hidden opacity-0 transition-all duration-900 ease-linear"
+                id="detailResponsive"
+              >
+                <div
+                  class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white font-extrabold">dota 2</p>
+                  <p class="text-[#666] text-sm">sandbox</p>
+                </div>
+                <div
+                  class="date flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">date added</p>
+                  <p class="text-[#666] text-sm">24-08-2020</p>
+                </div>
+                <div
+                  class="hours flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">hours played</p>
+                  <p class="text-[#666] text-sm">200 h 22 mins</p>
+                </div>
+                <div
+                  class="currently flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">currently</p>
+                  <p class="text-[#666] text-sm">download</p>
+                </div>
+
+                <div
+                  class="status flex justify-center items-center col-span-2 rounded-3xl cursor-pointer border-2 border-[#EC6090]"
+                >
+                  <a class="px-6 py-2 text-[#666] text-3xl" href="">Download</a>
                 </div>
               </div>
             </div>
@@ -603,9 +818,29 @@
         nav.classList.toggle("flex");
       }
 
-      function toggleChevron() {
+      function toggleChevron(clicked) {
         const chev = document.getElementById("chevron");
         chev.classList.toggle("rotate-180");
+
+        const nav = document.getElementById("detailResponsive");
+        nav.classList.toggle("hidden");
+        nav.classList.toggle("grid");
+
+        if (nav.classList.contains("max-h-0")) {
+          nav.classList.remove("max-h-0");
+          nav.classList.add("max-h-[400px]");
+          nav.classList.remove("opacity-0");
+          nav.classList.add("opacity-100");
+        } else {
+          nav.classList.remove("max-h-[400px]");
+          nav.classList.add("max-h-0");
+          nav.classList.remove("opacity-100");
+          nav.classList.add("opacity-0");
+        }
+
+        const image = document.getElementById("imageConditional");
+        image.classList.toggle("translate-x-[50%]");
+        image.classList.toggle("md:translate-x-[80%]");
       }
     </script>
   </body>
