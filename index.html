@@ -16,7 +16,7 @@
       class="center-content max-w-[90%] box-border flex flex-col justify-start mt-10 p-0 font-mono uppercase"
     >
       <header
-        class="grid grid-cols-3 w-full bg-[#1f2128] top-0 p-5 left-0 text-xl fixed"
+        class="grid grid-cols-3 w-full bg-[#1f2128] top-0 p-5 left-0 text-xl fixed z-100"
       >
         <div
           class="logo flex items-center text-3xl w-fit text-pink-700 font-bold"
@@ -97,7 +97,7 @@
             </li>
           </ul>
           <div
-            class="bg-[#2A2B2F] absolute w-full top-0 left-0 h-full hidden justify-center p-3 gap-3"
+            class="bg-[#2A2B2F] absolute top-0 left-0 w-0 max-h-[70%] py-2 transition-all duration-700 ease-in overflow-hidden opacity-0 flex justify-center p-3 gap-3"
             id="responsiveSearch"
           >
             <input
@@ -129,7 +129,7 @@
         class="flex flex-col items-center bg-[#2A2B2F] mt-20 pt-20 pb-20 rounded-4xl box-border"
       >
         <div
-          class="banner w-[90%] bg-[url(./image/bg.jpg)] bg-cover bg-no-repeat bg-center mt-10 h-full pt-40 pb-40 rounded-4xl sm:block md:block"
+          class="banner w-[90%] bg-[url(./image/bg.jpg)] bg-cover bg-no-repeat bg-left md:bg-center mt-10 h-full pt-40 pb-40 rounded-4xl sm:block md:block"
         >
           <div class="text flex flex-col gap-6 items-start md:p-3">
             <p class="text-white text-7xl">welcome to cyborg</p>
@@ -158,8 +158,8 @@
           >
             <div class="card bg-[#2A2B2F] flex flex-col p-6 rounded-2xl">
               <img
-                class="aspect-square rounded-4xl object-cover pb-3"
-                src="image/masbro.jpeg"
+                class="aspect-square rounded-4xl  object-fill pb-3"
+                src="image/gta.jpg"
                 alt=""
               />
               <div class="caption1 flex justify-between">
@@ -201,8 +201,8 @@
             </div>
             <div class="card bg-[#2A2B2F] flex flex-col p-6 rounded-2xl">
               <img
-                class="aspect-square rounded-4xl object-cover pb-3"
-                src="image/masbro.jpeg"
+                class="aspect-square rounded-4xl object-fill pb-3"
+                src="image/Point Blank Strike.jpg"
                 alt=""
               />
               <div class="caption1 flex justify-between">
@@ -244,8 +244,8 @@
             </div>
             <div class="card bg-[#2A2B2F] flex flex-col p-6 rounded-2xl">
               <img
-                class="aspect-square rounded-4xl object-cover pb-3"
-                src="image/masbro.jpeg"
+                class="aspect-square rounded-4xl object-fill pb-3"
+                src="image/delta force.jpg"
                 alt=""
               />
               <div class="caption1 flex justify-between">
@@ -287,8 +287,8 @@
             </div>
             <div class="card bg-[#2A2B2F] flex flex-col p-6 rounded-2xl">
               <img
-                class="aspect-square rounded-4xl object-cover pb-3"
-                src="image/masbro.jpeg"
+                class="aspect-square rounded-4xl object-fill pb-3"
+                src="image/valorant.jpg"
                 alt=""
               />
               <div class="caption1 flex justify-between">
@@ -518,8 +518,7 @@
                 class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
               >
                 <div
-                  class="name flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
-                  id="imageConditional"
+                  class="imageConditional flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
                 >
                   <div class="image">
                     <img
@@ -560,15 +559,13 @@
                 </div>
                 <div class="flex justify-end items-center xl:hidden">
                   <i
-                    class="bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
-                    id="chevron"
+                    class="chevron bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
                     onclick="toggleChevron(this)"
                   ></i>
                 </div>
               </div>
               <div
-                class="detailResponsive hidden grid-cols-2 gap-3 p-10 max-h-0 overflow-hidden opacity-0 transition-all duration-900 ease-linear"
-                id="detailResponsive"
+                class="detailResponsive max-h-0 md:grid md:grid-cols-2 md:gap-3 overflow-hidden w-full opacity-0 space-y-4 transition-all duration-1000 ease-in"
               >
                 <div
                   class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
@@ -602,13 +599,12 @@
                 </div>
               </div>
             </div>
-             <div class="list-item border-b-white border-b-1">
+            <div class="list-item border-b-white border-b-1">
               <div
                 class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
               >
                 <div
-                  class="name flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
-                  id="imageConditional"
+                  class="imageConditional flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
                 >
                   <div class="image">
                     <img
@@ -649,15 +645,13 @@
                 </div>
                 <div class="flex justify-end items-center xl:hidden">
                   <i
-                    class="bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
-                    id="chevron"
+                    class="chevron bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
                     onclick="toggleChevron(this)"
                   ></i>
                 </div>
               </div>
               <div
-                class="detailResponsive hidden grid-cols-2 gap-3 p-10 max-h-0 overflow-hidden opacity-0 transition-all duration-900 ease-linear"
-                id="detailResponsive"
+                class="detailResponsive max-h-0 md:grid md:grid-cols-2 md:gap-3 overflow-hidden w-full opacity-0 space-y-4 transition-all duration-1000 ease-in"
               >
                 <div
                   class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
@@ -691,13 +685,12 @@
                 </div>
               </div>
             </div>
-             <div class="list-item border-b-white border-b-1">
+            <div class="list-item border-b-white border-b-1">
               <div
                 class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
               >
                 <div
-                  class="name flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
-                  id="imageConditional"
+                  class="imageConditional flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
                 >
                   <div class="image">
                     <img
@@ -738,15 +731,185 @@
                 </div>
                 <div class="flex justify-end items-center xl:hidden">
                   <i
-                    class="bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
-                    id="chevron"
+                    class="chevron bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
                     onclick="toggleChevron(this)"
                   ></i>
                 </div>
               </div>
               <div
-                class="detailResponsive hidden grid-cols-2 gap-3 p-10 max-h-0 overflow-hidden opacity-0 transition-all duration-900 ease-linear"
-                id="detailResponsive"
+                class="detailResponsive max-h-0 md:grid md:grid-cols-2 md:gap-3 overflow-hidden w-full opacity-0 space-y-4 transition-all duration-1000 ease-in"
+              >
+                <div
+                  class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white font-extrabold">dota 2</p>
+                  <p class="text-[#666] text-sm">sandbox</p>
+                </div>
+                <div
+                  class="date flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">date added</p>
+                  <p class="text-[#666] text-sm">24-08-2020</p>
+                </div>
+                <div
+                  class="hours flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">hours played</p>
+                  <p class="text-[#666] text-sm">200 h 22 mins</p>
+                </div>
+                <div
+                  class="currently flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">currently</p>
+                  <p class="text-[#666] text-sm">download</p>
+                </div>
+
+                <div
+                  class="status flex justify-center items-center col-span-2 rounded-3xl cursor-pointer border-2 border-[#EC6090]"
+                >
+                  <a class="px-6 py-2 text-[#666] text-3xl" href="">Download</a>
+                </div>
+              </div>
+            </div>
+            <div class="list-item border-b-white border-b-1">
+              <div
+                class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
+              >
+                <div
+                  class="imageConditional flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
+                >
+                  <div class="image">
+                    <img
+                      class="w-30 rounded-4xl object-cover shrink-0"
+                      src="image/masbro.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="caption hidden xl:flex flex-col justify-center ml-3"
+                  >
+                    <p class="text-white font-extrabold">dota 2</p>
+                    <p class="text-[#666] text-sm">sandbox</p>
+                  </div>
+                </div>
+                <div
+                  class="detail hidden xl:flex flex-col lg:flex-row justify-center lg:justify-around items-center"
+                >
+                  <div class="date">
+                    <p class="text-white">date added</p>
+                    <p class="text-[#666] text-sm">24-08-2020</p>
+                  </div>
+                  <div class="hours">
+                    <p class="text-white">hours played</p>
+                    <p class="text-[#666] text-sm">200 h 22 mins</p>
+                  </div>
+                  <div class="currently">
+                    <p class="text-white">currently</p>
+                    <p class="text-[#666] text-sm">download</p>
+                  </div>
+                </div>
+                <div class="status hidden xl:flex justify-center items-center">
+                  <a
+                    class="rounded-3xl cursor-pointer border-2 border-[#EC6090] pl-6 pr-6 pt-2 pb-2 text-[#666] hover:bg-[#EC6090] hover:text-white"
+                    href=""
+                    >Download</a
+                  >
+                </div>
+                <div class="flex justify-end items-center xl:hidden">
+                  <i
+                    class="chevron bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
+                    onclick="toggleChevron(this)"
+                  ></i>
+                </div>
+              </div>
+              <div
+                class="detailResponsive max-h-0 md:grid md:grid-cols-2 md:gap-3 overflow-hidden w-full opacity-0 space-y-4 transition-all duration-1000 ease-in"
+              >
+                <div
+                  class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white font-extrabold">dota 2</p>
+                  <p class="text-[#666] text-sm">sandbox</p>
+                </div>
+                <div
+                  class="date flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">date added</p>
+                  <p class="text-[#666] text-sm">24-08-2020</p>
+                </div>
+                <div
+                  class="hours flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">hours played</p>
+                  <p class="text-[#666] text-sm">200 h 22 mins</p>
+                </div>
+                <div
+                  class="currently flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">currently</p>
+                  <p class="text-[#666] text-sm">download</p>
+                </div>
+
+                <div
+                  class="status flex justify-center items-center col-span-2 rounded-3xl cursor-pointer border-2 border-[#EC6090]"
+                >
+                  <a class="px-6 py-2 text-[#666] text-3xl" href="">Download</a>
+                </div>
+              </div>
+            </div>
+            <div class="list-item border-b-white border-b-1">
+              <div
+                class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
+              >
+                <div
+                  class="imageConditional flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
+                >
+                  <div class="image">
+                    <img
+                      class="w-30 rounded-4xl object-cover shrink-0"
+                      src="image/masbro.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="caption hidden xl:flex flex-col justify-center ml-3"
+                  >
+                    <p class="text-white font-extrabold">dota 2</p>
+                    <p class="text-[#666] text-sm">sandbox</p>
+                  </div>
+                </div>
+                <div
+                  class="detail hidden xl:flex flex-col lg:flex-row justify-center lg:justify-around items-center"
+                >
+                  <div class="date">
+                    <p class="text-white">date added</p>
+                    <p class="text-[#666] text-sm">24-08-2020</p>
+                  </div>
+                  <div class="hours">
+                    <p class="text-white">hours played</p>
+                    <p class="text-[#666] text-sm">200 h 22 mins</p>
+                  </div>
+                  <div class="currently">
+                    <p class="text-white">currently</p>
+                    <p class="text-[#666] text-sm">download</p>
+                  </div>
+                </div>
+                <div class="status hidden xl:flex justify-center items-center">
+                  <a
+                    class="rounded-3xl cursor-pointer border-2 border-[#EC6090] pl-6 pr-6 pt-2 pb-2 text-[#666] hover:bg-[#EC6090] hover:text-white"
+                    href=""
+                    >Download</a
+                  >
+                </div>
+                <div class="flex justify-end items-center xl:hidden">
+                  <i
+                    class="chevron bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
+                    onclick="toggleChevron(this)"
+                  ></i>
+                </div>
+              </div>
+              <div
+                class="detailResponsive max-h-0 md:grid md:grid-cols-2 md:gap-3 overflow-hidden w-full opacity-0 space-y-4 transition-all duration-1000 ease-in"
               >
                 <div
                   class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
@@ -814,31 +977,41 @@
 
       function toggleSearch() {
         const nav = document.getElementById("responsiveSearch");
-        nav.classList.toggle("hidden");
-        nav.classList.toggle("flex");
-      }
-
-      function toggleChevron(clicked) {
-        const chev = document.getElementById("chevron");
-        chev.classList.toggle("rotate-180");
-
-        const nav = document.getElementById("detailResponsive");
-        nav.classList.toggle("hidden");
-        nav.classList.toggle("grid");
-
-        if (nav.classList.contains("max-h-0")) {
-          nav.classList.remove("max-h-0");
-          nav.classList.add("max-h-[400px]");
+        if (nav.classList.contains("w-0")) {
+          nav.classList.remove("w-0");
+          nav.classList.add("w-full");
           nav.classList.remove("opacity-0");
           nav.classList.add("opacity-100");
         } else {
-          nav.classList.remove("max-h-[400px]");
+          nav.classList.remove("w-full");
+          nav.classList.add("max-w-0");
+          nav.classList.remove("opacity-100");
+          nav.classList.add("opacity-0");
+        }
+      }
+
+      function toggleChevron(el) {
+        const list = el.closest(".list");
+        const nav = list.nextElementSibling;
+
+        if (nav.classList.contains("max-h-0")) {
+          nav.classList.remove("max-h-0");
+          nav.classList.add("max-h-[500px]");
+          nav.classList.remove("opacity-0");
+          nav.classList.add("opacity-100");
+          nav.classList.add("p-10");
+        } else {
+          nav.classList.remove("p-10");
+          nav.classList.remove("max-h-[500px]");
           nav.classList.add("max-h-0");
           nav.classList.remove("opacity-100");
           nav.classList.add("opacity-0");
         }
 
-        const image = document.getElementById("imageConditional");
+        const chev = el.closest(".chevron");
+        chev.classList.toggle("rotate-180");
+
+        const image = list.querySelector(".imageConditional");
         image.classList.toggle("translate-x-[50%]");
         image.classList.toggle("md:translate-x-[80%]");
       }
