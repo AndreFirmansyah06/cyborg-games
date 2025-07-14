@@ -11,7 +11,7 @@
     <style type="text/tailwindcss"></style>
     <title>Cyborg Games</title>
   </head>
-  <body class="bg-[#1f2128] flex justify-center m-0 p-0">
+  <body class="bg-[#1f2128] flex justify-center m-0 p-0 capitalize">
     <div
       class="center-content max-w-[90%] box-border flex flex-col justify-start mt-10 p-0 font-mono uppercase"
     >
@@ -19,9 +19,9 @@
         class="grid grid-cols-3 w-full bg-[#1f2128] top-0 p-5 left-0 text-xl fixed z-100"
       >
         <div
-          class="logo flex items-center text-3xl w-fit text-pink-700 font-bold"
+          class="logo flex items-center text-3xl w-fit text-pink-700 font-bold col-span-2 md:col-span-1 leading-6"
         >
-          Cyborg
+          Cyborg Games
         </div>
         <div class="search relative bg-[#2A2B2F] rounded-3xl hidden md:flex">
           <span
@@ -131,15 +131,15 @@
         <div
           class="banner w-[90%] bg-[url(./image/bg.jpg)] bg-cover bg-no-repeat bg-left md:bg-center mt-10 h-full pt-40 pb-40 rounded-4xl sm:block md:block"
         >
-          <div class="text flex flex-col gap-6 items-start md:p-3">
-            <p class="text-white text-7xl">welcome to cyborg</p>
-            <p class="text-pink-600 text-5xl">
-              browse <span class="text-white text-5xl">our popular</span
+          <div class="text-lg md:text-4xl flex flex-col gap-1 md:gap-3 items-start md:p-3">
+            <p class="text-white ">welcome to cyborg</p>
+            <p class="text-pink-600 ">
+              browse <span class="text-white">our popular</span
               ><span class="block text-white">games here</span>
             </p>
             <a
               href="#"
-              class="bg-[#EC6090] text-white w-[50%] md:w-[20%] rounded-4xl p-1 text-center"
+              class="bg-[#EC6090] text-white w-[50%] md:w-[20%] text-lg rounded-4xl p-1 text-center"
               >Browse here</a
             >
           </div>
@@ -154,16 +154,16 @@
             <p class="text-[#EC6090]">right now</p>
           </div>
           <div
-            class="card-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pl-1 pr-2 gap-5 mt-10"
+            class="card-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pl-1 pr-2 gap-5 mt-10 leading-4"
           >
             <div class="card bg-[#2A2B2F] flex flex-col p-6 rounded-2xl">
               <img
-                class="aspect-square rounded-4xl  object-fill pb-3"
-                src="image/gta.jpg"
+                class="aspect-2/3 rounded-4xl object-cover pb-3"
+                src="image/callOfDuty.jfif"
                 alt=""
               />
               <div class="caption1 flex justify-between">
-                <p class="text-white">Fortnite</p>
+                <p class="text-white">call of duty modern warfare</p>
                 <p class="text-white flex gap-2">
                   <span
                     ><svg
@@ -181,7 +181,7 @@
                 </p>
               </div>
               <div class="caption2 flex justify-between">
-                <p class="text-[#666]">sandbox</p>
+                <p class="text-[#666]">first person shooter</p>
 
                 <p class="text-white flex">
                   <span
@@ -201,12 +201,12 @@
             </div>
             <div class="card bg-[#2A2B2F] flex flex-col p-6 rounded-2xl">
               <img
-                class="aspect-square rounded-4xl object-fill pb-3"
+                class="aspect-2/3 rounded-4xl object-cover pb-3"
                 src="image/Point Blank Strike.jpg"
                 alt=""
               />
               <div class="caption1 flex justify-between">
-                <p class="text-white">Fortnite</p>
+                <p class="text-white">point blank</p>
                 <p class="text-white flex gap-2">
                   <span
                     ><svg
@@ -224,7 +224,7 @@
                 </p>
               </div>
               <div class="caption2 flex justify-between">
-                <p class="text-[#666]">sandbox</p>
+                <p class="text-[#666]">first person shooter</p>
 
                 <p class="text-white flex">
                   <span
@@ -244,12 +244,12 @@
             </div>
             <div class="card bg-[#2A2B2F] flex flex-col p-6 rounded-2xl">
               <img
-                class="aspect-square rounded-4xl object-fill pb-3"
+                class="aspect-2/3 rounded-4xl object-cover pb-3"
                 src="image/delta force.jpg"
                 alt=""
               />
               <div class="caption1 flex justify-between">
-                <p class="text-white">Fortnite</p>
+                <p class="text-white">delta force</p>
                 <p class="text-white flex gap-2">
                   <span
                     ><svg
@@ -267,7 +267,7 @@
                 </p>
               </div>
               <div class="caption2 flex justify-between">
-                <p class="text-[#666]">sandbox</p>
+                <p class="text-[#666]">first person shooter</p>
 
                 <p class="text-white flex">
                   <span
@@ -287,12 +287,12 @@
             </div>
             <div class="card bg-[#2A2B2F] flex flex-col p-6 rounded-2xl">
               <img
-                class="aspect-square rounded-4xl object-fill pb-3"
-                src="image/valorant.jpg"
+                class="aspect-2/3 rounded-4xl object-fill pb-3"
+                src="image/nba2k.jfif"
                 alt=""
               />
               <div class="caption1 flex justify-between">
-                <p class="text-white">Fortnite</p>
+                <p class="text-white">nba 2k25</p>
                 <p class="text-white flex gap-2">
                   <span
                     ><svg
@@ -310,7 +310,7 @@
                 </p>
               </div>
               <div class="caption2 flex justify-between">
-                <p class="text-[#666]">sandbox</p>
+                <p class="text-[#666]">sport</p>
 
                 <p class="text-white flex">
                   <span
@@ -330,12 +330,12 @@
             </div>
             <div class="card bg-[#2A2B2F] flex flex-col p-6 rounded-2xl">
               <img
-                class="aspect-square rounded-4xl object-cover pb-3"
-                src="image/masbro.jpeg"
+                class="aspect-2/3 rounded-4xl object-cover pb-3"
+                src="image/eaFC.jpg"
                 alt=""
               />
               <div class="caption1 flex justify-between">
-                <p class="text-white">Fortnite</p>
+                <p class="text-white">EA FC 25</p>
                 <p class="text-white flex gap-2">
                   <span
                     ><svg
@@ -353,7 +353,7 @@
                 </p>
               </div>
               <div class="caption2 flex justify-between">
-                <p class="text-[#666]">sandbox</p>
+                <p class="text-[#666]">sport</p>
 
                 <p class="text-white flex">
                   <span
@@ -373,12 +373,12 @@
             </div>
             <div class="card bg-[#2A2B2F] flex flex-col p-6 rounded-2xl">
               <img
-                class="aspect-square rounded-4xl object-cover pb-3"
-                src="image/masbro.jpeg"
+                class="aspect-2/3 rounded-4xl object-cover pb-3"
+                src="image/forzaHorizon.jpg"
                 alt=""
               />
               <div class="caption1 flex justify-between">
-                <p class="text-white">Fortnite</p>
+                <p class="text-white">forza horizon</p>
                 <p class="text-white flex gap-2">
                   <span
                     ><svg
@@ -396,7 +396,7 @@
                 </p>
               </div>
               <div class="caption2 flex justify-between">
-                <p class="text-[#666]">sandbox</p>
+                <p class="text-[#666]">racing</p>
 
                 <p class="text-white flex">
                   <span
@@ -416,12 +416,12 @@
             </div>
             <div class="card bg-[#2A2B2F] flex flex-col p-6 rounded-2xl">
               <img
-                class="aspect-square rounded-4xl object-cover pb-3"
-                src="image/masbro.jpeg"
+                class="aspect-2/3 rounded-4xl object-contain pb-3"
+                src="image/rss.jfif"
                 alt=""
               />
               <div class="caption1 flex justify-between">
-                <p class="text-white">Fortnite</p>
+                <p class="text-white">rainbow six-siege</p>
                 <p class="text-white flex gap-2">
                   <span
                     ><svg
@@ -439,7 +439,7 @@
                 </p>
               </div>
               <div class="caption2 flex justify-between">
-                <p class="text-[#666]">sandbox</p>
+                <p class="text-[#666]">first person shooter</p>
 
                 <p class="text-white flex">
                   <span
@@ -459,12 +459,12 @@
             </div>
             <div class="card bg-[#2A2B2F] flex flex-col p-6 rounded-2xl">
               <img
-                class="aspect-square rounded-4xl object-cover pb-3"
-                src="image/masbro.jpeg"
+                class="aspect-2/3 rounded-4xl object-cover py-3"
+                src="image/granTourismo.jpg"
                 alt=""
               />
               <div class="caption1 flex justify-between">
-                <p class="text-white">Fortnite</p>
+                <p class="text-white">gran tourismo 7</p>
                 <p class="text-white flex gap-2">
                   <span
                     ><svg
@@ -482,7 +482,7 @@
                 </p>
               </div>
               <div class="caption2 flex justify-between">
-                <p class="text-[#666]">sandbox</p>
+                <p class="text-[#666]">racing</p>
 
                 <p class="text-white flex">
                   <span
@@ -512,8 +512,8 @@
               your gaming <span class="text-[#EC6090]">library</span>
             </p>
           </div>
-          <div class="list-wrapper flex flex-col gap-5 pt-10">
-            <div class="list-item border-b-white border-b-1">
+          <div class="list-wrapper flex flex-col gap-5 pt-10 leading-4">
+            <div class="border-b-white border-b-1">
               <div
                 class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
               >
@@ -522,16 +522,16 @@
                 >
                   <div class="image">
                     <img
-                      class="w-30 rounded-4xl object-cover shrink-0"
-                      src="image/masbro.jpeg"
+                      class="w-30 rounded-2xl object-cover shrink-0"
+                      src="image/Point Blank Strike.jpg"
                       alt=""
                     />
                   </div>
                   <div
                     class="caption hidden xl:flex flex-col justify-center ml-3"
                   >
-                    <p class="text-white font-extrabold">dota 2</p>
-                    <p class="text-[#666] text-sm">sandbox</p>
+                    <p class="text-white font-extrabold">point blank</p>
+                    <p class="text-[#666] text-sm">first person shooter</p>
                   </div>
                 </div>
                 <div
@@ -539,11 +539,97 @@
                 >
                   <div class="date">
                     <p class="text-white">date added</p>
-                    <p class="text-[#666] text-sm">24-08-2020</p>
+                    <p class="text-[#666] text-sm">24-08-2024</p>
                   </div>
                   <div class="hours">
                     <p class="text-white">hours played</p>
-                    <p class="text-[#666] text-sm">200 h 22 mins</p>
+                    <p class="text-[#666] text-sm">120 h 10 mins</p>
+                  </div>
+                  <div class="currently">
+                    <p class="text-white">currently</p>
+                    <p class="text-[#666] text-sm">not downloaded</p>
+                  </div>
+                </div>
+                <div class="status hidden xl:flex justify-center items-center">
+                  <a
+                    class="rounded-3xl cursor-pointer border-2 border-[#EC6090] pl-6 pr-6 pt-2 pb-2 text-[#666] hover:bg-[#EC6090] hover:text-white"
+                    href=""
+                    >Download</a
+                  >
+                </div>
+                <div class="flex justify-end items-center xl:hidden">
+                  <i
+                    class="chevron bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
+                    onclick="toggleChevron(this)"
+                  ></i>
+                </div>
+              </div>
+              <div
+                class="detailResponsive max-h-0 md:grid md:grid-cols-2 md:gap-3 overflow-hidden w-full opacity-0 space-y-4 transition-all duration-1000 ease-in"
+              >
+                <div
+                  class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white font-extrabold">point blank</p>
+                  <p class="text-[#666] text-sm">first person shooter</p>
+                </div>
+                <div
+                  class="date flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">date added</p>
+                  <p class="text-[#666] text-sm">24-08-2024</p>
+                </div>
+                <div
+                  class="hours flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">hours played</p>
+                  <p class="text-[#666] text-sm">120 h 10 mins</p>
+                </div>
+                <div
+                  class="currently flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">currently</p>
+                  <p class="text-[#666] text-sm">not downloaded</p>
+                </div>
+
+                <div
+                  class="status flex justify-center items-center col-span-2 rounded-3xl cursor-pointer border-2 border-[#EC6090]"
+                >
+                  <a class="px-6 py-2 text-[#666] text-3xl" href="">Download</a>
+                </div>
+              </div>
+            </div>
+            <div class="border-b-white border-b-1">
+              <div
+                class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
+              >
+                <div
+                  class="imageConditional flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
+                >
+                  <div class="image">
+                    <img
+                      class="w-30 rounded-2xl object-cover shrink-0"
+                      src="image/valorant.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="caption hidden xl:flex flex-col justify-center ml-3"
+                  >
+                    <p class="text-white font-extrabold">valorant</p>
+                    <p class="text-[#666] text-sm">first person shooter</p>
+                  </div>
+                </div>
+                <div
+                  class="detail hidden xl:flex flex-col lg:flex-row justify-center lg:justify-around items-center"
+                >
+                  <div class="date">
+                    <p class="text-white">date added</p>
+                    <p class="text-[#666] text-sm">24-04-2025</p>
+                  </div>
+                  <div class="hours">
+                    <p class="text-white">hours played</p>
+                    <p class="text-[#666] text-sm">100 h 22 mins</p>
                   </div>
                   <div class="currently">
                     <p class="text-white">currently</p>
@@ -570,20 +656,20 @@
                 <div
                   class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
                 >
-                  <p class="text-white font-extrabold">dota 2</p>
-                  <p class="text-[#666] text-sm">sandbox</p>
+                  <p class="text-white font-extrabold">valorant</p>
+                  <p class="text-[#666] text-sm">first person shooter</p>
                 </div>
                 <div
                   class="date flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
                 >
                   <p class="text-white">date added</p>
-                  <p class="text-[#666] text-sm">24-08-2020</p>
+                  <p class="text-[#666] text-sm">24-04-2025</p>
                 </div>
                 <div
                   class="hours flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
                 >
                   <p class="text-white">hours played</p>
-                  <p class="text-[#666] text-sm">200 h 22 mins</p>
+                  <p class="text-[#666] text-sm">100 h 22 mins</p>
                 </div>
                 <div
                   class="currently flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
@@ -599,7 +685,7 @@
                 </div>
               </div>
             </div>
-            <div class="list-item border-b-white border-b-1">
+            <div class="border-b-white border-b-1">
               <div
                 class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
               >
@@ -608,16 +694,16 @@
                 >
                   <div class="image">
                     <img
-                      class="w-30 rounded-4xl object-cover shrink-0"
-                      src="image/masbro.jpeg"
+                      class="w-30 rounded-2xl object-cover shrink-0"
+                      src="image/eaFC.jpg"
                       alt=""
                     />
                   </div>
                   <div
                     class="caption hidden xl:flex flex-col justify-center ml-3"
                   >
-                    <p class="text-white font-extrabold">dota 2</p>
-                    <p class="text-[#666] text-sm">sandbox</p>
+                    <p class="text-white font-extrabold">ea fc 25</p>
+                    <p class="text-[#666] text-sm">sport</p>
                   </div>
                 </div>
                 <div
@@ -625,11 +711,97 @@
                 >
                   <div class="date">
                     <p class="text-white">date added</p>
-                    <p class="text-[#666] text-sm">24-08-2020</p>
+                    <p class="text-[#666] text-sm">04-04-2025</p>
                   </div>
                   <div class="hours">
                     <p class="text-white">hours played</p>
-                    <p class="text-[#666] text-sm">200 h 22 mins</p>
+                    <p class="text-[#666] text-sm">89 h 22 mins</p>
+                  </div>
+                  <div class="currently">
+                    <p class="text-white">currently</p>
+                    <p class="text-[#666] text-sm">not downloaded</p>
+                  </div>
+                </div>
+                <div class="status hidden xl:flex justify-center items-center">
+                  <a
+                    class="rounded-3xl cursor-pointer border-2 border-[#EC6090] pl-6 pr-6 pt-2 pb-2 text-[#666] hover:bg-[#EC6090] hover:text-white"
+                    href=""
+                    >Download</a
+                  >
+                </div>
+                <div class="flex justify-end items-center xl:hidden">
+                  <i
+                    class="chevron bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
+                    onclick="toggleChevron(this)"
+                  ></i>
+                </div>
+              </div>
+              <div
+                class="detailResponsive max-h-0 md:grid md:grid-cols-2 md:gap-3 overflow-hidden w-full opacity-0 space-y-4 transition-all duration-1000 ease-in"
+              >
+                <div
+                  class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white font-extrabold">ea fc 25</p>
+                  <p class="text-[#666] text-sm">sport</p>
+                </div>
+                <div
+                  class="date flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">date added</p>
+                  <p class="text-[#666] text-sm">04-04-2025</p>
+                </div>
+                <div
+                  class="hours flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">hours played</p>
+                  <p class="text-[#666] text-sm">89 h 22 mins</p>
+                </div>
+                <div
+                  class="currently flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
+                >
+                  <p class="text-white">currently</p>
+                  <p class="text-[#666] text-sm">not downloaded</p>
+                </div>
+
+                <div
+                  class="status flex justify-center items-center col-span-2 rounded-3xl cursor-pointer border-2 border-[#EC6090]"
+                >
+                  <a class="px-6 py-2 text-[#666] text-3xl" href="">Download</a>
+                </div>
+              </div>
+            </div>
+            <div class="border-b-white border-b-1">
+              <div
+                class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
+              >
+                <div
+                  class="imageConditional flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
+                >
+                  <div class="image">
+                    <img
+                      class="w-30 rounded-2xl object-cover shrink-0"
+                      src="image/granTourismo.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="caption hidden xl:flex flex-col justify-center ml-3"
+                  >
+                    <p class="text-white font-extrabold">gran tourismo 7</p>
+                    <p class="text-[#666] text-sm">racing</p>
+                  </div>
+                </div>
+                <div
+                  class="detail hidden xl:flex flex-col lg:flex-row justify-center lg:justify-around items-center"
+                >
+                  <div class="date">
+                    <p class="text-white">date added</p>
+                    <p class="text-[#666] text-sm">12-10-2024</p>
+                  </div>
+                  <div class="hours">
+                    <p class="text-white">hours played</p>
+                    <p class="text-[#666] text-sm">40 h 52 mins</p>
                   </div>
                   <div class="currently">
                     <p class="text-white">currently</p>
@@ -656,20 +828,20 @@
                 <div
                   class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
                 >
-                  <p class="text-white font-extrabold">dota 2</p>
-                  <p class="text-[#666] text-sm">sandbox</p>
+                  <p class="text-white font-extrabold">gran tourismo 7</p>
+                  <p class="text-[#666] text-sm">racing</p>
                 </div>
                 <div
                   class="date flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
                 >
                   <p class="text-white">date added</p>
-                  <p class="text-[#666] text-sm">24-08-2020</p>
+                  <p class="text-[#666] text-sm">12-10-2024</p>
                 </div>
                 <div
                   class="hours flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
                 >
                   <p class="text-white">hours played</p>
-                  <p class="text-[#666] text-sm">200 h 22 mins</p>
+                  <p class="text-[#666] text-sm">40 h 52 mins</p>
                 </div>
                 <div
                   class="currently flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
@@ -685,7 +857,7 @@
                 </div>
               </div>
             </div>
-            <div class="list-item border-b-white border-b-1">
+            <div class="border-b-white border-b-1">
               <div
                 class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
               >
@@ -694,16 +866,16 @@
                 >
                   <div class="image">
                     <img
-                      class="w-30 rounded-4xl object-cover shrink-0"
-                      src="image/masbro.jpeg"
+                      class="w-30 rounded-2xl object-cover shrink-0"
+                      src="image/nba2k.jfif"
                       alt=""
                     />
                   </div>
                   <div
                     class="caption hidden xl:flex flex-col justify-center ml-3"
                   >
-                    <p class="text-white font-extrabold">dota 2</p>
-                    <p class="text-[#666] text-sm">sandbox</p>
+                    <p class="text-white font-extrabold">nba 2k25</p>
+                    <p class="text-[#666] text-sm">sport</p>
                   </div>
                 </div>
                 <div
@@ -711,15 +883,15 @@
                 >
                   <div class="date">
                     <p class="text-white">date added</p>
-                    <p class="text-[#666] text-sm">24-08-2020</p>
+                    <p class="text-[#666] text-sm">09-11-2024</p>
                   </div>
                   <div class="hours">
                     <p class="text-white">hours played</p>
-                    <p class="text-[#666] text-sm">200 h 22 mins</p>
+                    <p class="text-[#666] text-sm">04 h 55 mins</p>
                   </div>
                   <div class="currently">
                     <p class="text-white">currently</p>
-                    <p class="text-[#666] text-sm">download</p>
+                    <p class="text-[#666] text-sm">not downloaded</p>
                   </div>
                 </div>
                 <div class="status hidden xl:flex justify-center items-center">
@@ -742,198 +914,26 @@
                 <div
                   class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
                 >
-                  <p class="text-white font-extrabold">dota 2</p>
-                  <p class="text-[#666] text-sm">sandbox</p>
+                  <p class="text-white font-extrabold">nba 2k25</p>
+                  <p class="text-[#666] text-sm">sport</p>
                 </div>
                 <div
                   class="date flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
                 >
                   <p class="text-white">date added</p>
-                  <p class="text-[#666] text-sm">24-08-2020</p>
+                  <p class="text-[#666] text-sm">09-11-2024</p>
                 </div>
                 <div
                   class="hours flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
                 >
                   <p class="text-white">hours played</p>
-                  <p class="text-[#666] text-sm">200 h 22 mins</p>
+                  <p class="text-[#666] text-sm">04 h 55 mins</p>
                 </div>
                 <div
                   class="currently flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
                 >
                   <p class="text-white">currently</p>
-                  <p class="text-[#666] text-sm">download</p>
-                </div>
-
-                <div
-                  class="status flex justify-center items-center col-span-2 rounded-3xl cursor-pointer border-2 border-[#EC6090]"
-                >
-                  <a class="px-6 py-2 text-[#666] text-3xl" href="">Download</a>
-                </div>
-              </div>
-            </div>
-            <div class="list-item border-b-white border-b-1">
-              <div
-                class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
-              >
-                <div
-                  class="imageConditional flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
-                >
-                  <div class="image">
-                    <img
-                      class="w-30 rounded-4xl object-cover shrink-0"
-                      src="image/masbro.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="caption hidden xl:flex flex-col justify-center ml-3"
-                  >
-                    <p class="text-white font-extrabold">dota 2</p>
-                    <p class="text-[#666] text-sm">sandbox</p>
-                  </div>
-                </div>
-                <div
-                  class="detail hidden xl:flex flex-col lg:flex-row justify-center lg:justify-around items-center"
-                >
-                  <div class="date">
-                    <p class="text-white">date added</p>
-                    <p class="text-[#666] text-sm">24-08-2020</p>
-                  </div>
-                  <div class="hours">
-                    <p class="text-white">hours played</p>
-                    <p class="text-[#666] text-sm">200 h 22 mins</p>
-                  </div>
-                  <div class="currently">
-                    <p class="text-white">currently</p>
-                    <p class="text-[#666] text-sm">download</p>
-                  </div>
-                </div>
-                <div class="status hidden xl:flex justify-center items-center">
-                  <a
-                    class="rounded-3xl cursor-pointer border-2 border-[#EC6090] pl-6 pr-6 pt-2 pb-2 text-[#666] hover:bg-[#EC6090] hover:text-white"
-                    href=""
-                    >Download</a
-                  >
-                </div>
-                <div class="flex justify-end items-center xl:hidden">
-                  <i
-                    class="chevron bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
-                    onclick="toggleChevron(this)"
-                  ></i>
-                </div>
-              </div>
-              <div
-                class="detailResponsive max-h-0 md:grid md:grid-cols-2 md:gap-3 overflow-hidden w-full opacity-0 space-y-4 transition-all duration-1000 ease-in"
-              >
-                <div
-                  class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
-                >
-                  <p class="text-white font-extrabold">dota 2</p>
-                  <p class="text-[#666] text-sm">sandbox</p>
-                </div>
-                <div
-                  class="date flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
-                >
-                  <p class="text-white">date added</p>
-                  <p class="text-[#666] text-sm">24-08-2020</p>
-                </div>
-                <div
-                  class="hours flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
-                >
-                  <p class="text-white">hours played</p>
-                  <p class="text-[#666] text-sm">200 h 22 mins</p>
-                </div>
-                <div
-                  class="currently flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
-                >
-                  <p class="text-white">currently</p>
-                  <p class="text-[#666] text-sm">download</p>
-                </div>
-
-                <div
-                  class="status flex justify-center items-center col-span-2 rounded-3xl cursor-pointer border-2 border-[#EC6090]"
-                >
-                  <a class="px-6 py-2 text-[#666] text-3xl" href="">Download</a>
-                </div>
-              </div>
-            </div>
-            <div class="list-item border-b-white border-b-1">
-              <div
-                class="list grid grid-cols-2 xl:grid-cols-[1fr_2fr_1fr] pb-5 pt-5 mr-2"
-              >
-                <div
-                  class="imageConditional flex flex-col xl:flex-row xl:items-center xl:translate-0 transition-transform duration-700 ease-linear"
-                >
-                  <div class="image">
-                    <img
-                      class="w-30 rounded-4xl object-cover shrink-0"
-                      src="image/masbro.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="caption hidden xl:flex flex-col justify-center ml-3"
-                  >
-                    <p class="text-white font-extrabold">dota 2</p>
-                    <p class="text-[#666] text-sm">sandbox</p>
-                  </div>
-                </div>
-                <div
-                  class="detail hidden xl:flex flex-col lg:flex-row justify-center lg:justify-around items-center"
-                >
-                  <div class="date">
-                    <p class="text-white">date added</p>
-                    <p class="text-[#666] text-sm">24-08-2020</p>
-                  </div>
-                  <div class="hours">
-                    <p class="text-white">hours played</p>
-                    <p class="text-[#666] text-sm">200 h 22 mins</p>
-                  </div>
-                  <div class="currently">
-                    <p class="text-white">currently</p>
-                    <p class="text-[#666] text-sm">download</p>
-                  </div>
-                </div>
-                <div class="status hidden xl:flex justify-center items-center">
-                  <a
-                    class="rounded-3xl cursor-pointer border-2 border-[#EC6090] pl-6 pr-6 pt-2 pb-2 text-[#666] hover:bg-[#EC6090] hover:text-white"
-                    href=""
-                    >Download</a
-                  >
-                </div>
-                <div class="flex justify-end items-center xl:hidden">
-                  <i
-                    class="chevron bx bx-chevron-down text-white text-5xl px-5 transition-all duration-1000"
-                    onclick="toggleChevron(this)"
-                  ></i>
-                </div>
-              </div>
-              <div
-                class="detailResponsive max-h-0 md:grid md:grid-cols-2 md:gap-3 overflow-hidden w-full opacity-0 space-y-4 transition-all duration-1000 ease-in"
-              >
-                <div
-                  class="caption flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
-                >
-                  <p class="text-white font-extrabold">dota 2</p>
-                  <p class="text-[#666] text-sm">sandbox</p>
-                </div>
-                <div
-                  class="date flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
-                >
-                  <p class="text-white">date added</p>
-                  <p class="text-[#666] text-sm">24-08-2020</p>
-                </div>
-                <div
-                  class="hours flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
-                >
-                  <p class="text-white">hours played</p>
-                  <p class="text-[#666] text-sm">200 h 22 mins</p>
-                </div>
-                <div
-                  class="currently flex flex-col justify-center items-center border-2 rounded-3xl border-[#EC6090] p-3"
-                >
-                  <p class="text-white">currently</p>
-                  <p class="text-[#666] text-sm">download</p>
+                  <p class="text-[#666] text-sm">not downloaded</p>
                 </div>
 
                 <div
@@ -953,68 +953,6 @@
       </footer>
     </div>
 
-    <script>
-      function toggleMenu() {
-        <!-- event.preventDefault(); // hindari reload atau blink -->
-        const nav = document.getElementById("responsive-navbar");
-        if (nav.classList.contains("max-h-0")) {
-          nav.classList.remove("max-h-0");
-          nav.classList.add("max-h-[400px]");
-          nav.classList.remove("opacity-0");
-          nav.classList.add("opacity-100");
-        } else {
-          nav.classList.remove("max-h-[400px]");
-          nav.classList.add("max-h-0");
-          nav.classList.remove("opacity-100");
-          nav.classList.add("opacity-0");
-        }
-      }
-
-      function hideMenu() {
-        const nav = document.getElementById("responsive-navbar");
-        nav.classList.remove("show");
-      }
-
-      function toggleSearch() {
-        const nav = document.getElementById("responsiveSearch");
-        if (nav.classList.contains("w-0")) {
-          nav.classList.remove("w-0");
-          nav.classList.add("w-full");
-          nav.classList.remove("opacity-0");
-          nav.classList.add("opacity-100");
-        } else {
-          nav.classList.remove("w-full");
-          nav.classList.add("max-w-0");
-          nav.classList.remove("opacity-100");
-          nav.classList.add("opacity-0");
-        }
-      }
-
-      function toggleChevron(el) {
-        const list = el.closest(".list");
-        const nav = list.nextElementSibling;
-
-        if (nav.classList.contains("max-h-0")) {
-          nav.classList.remove("max-h-0");
-          nav.classList.add("max-h-[500px]");
-          nav.classList.remove("opacity-0");
-          nav.classList.add("opacity-100");
-          nav.classList.add("p-10");
-        } else {
-          nav.classList.remove("p-10");
-          nav.classList.remove("max-h-[500px]");
-          nav.classList.add("max-h-0");
-          nav.classList.remove("opacity-100");
-          nav.classList.add("opacity-0");
-        }
-
-        const chev = el.closest(".chevron");
-        chev.classList.toggle("rotate-180");
-
-        const image = list.querySelector(".imageConditional");
-        image.classList.toggle("translate-x-[50%]");
-        image.classList.toggle("md:translate-x-[80%]");
-      }
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
