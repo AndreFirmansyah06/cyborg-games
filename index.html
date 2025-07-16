@@ -19,7 +19,7 @@
         class="grid grid-cols-3 w-full bg-[#1f2128] top-0 p-5 left-0 text-xl fixed z-100"
       >
         <div
-          class="logo flex items-center text-3xl w-fit text-pink-700 font-bold col-span-2 md:col-span-1 leading-6"
+          class="logo flex items-center text-3xl text-pink-700 font-bold leading-6"
         >
           Cyborg Games
         </div>
@@ -74,14 +74,7 @@
             >
               profile
             </li>
-            <li>
-              <a href="javascript:void(0)" class="flex items-center md:hidden"
-                ><i
-                  class="bx bx-search text-white text-2xl"
-                  onclick="toggleSearch()"
-                ></i
-              ></a>
-            </li>
+
             <li class="flex xl:hidden" onclick="toggleMenu()">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -97,20 +90,19 @@
             </li>
           </ul>
           <div
-            class="bg-[#2A2B2F] absolute top-0 left-0 w-0 max-h-[70%] py-2 transition-all duration-700 ease-in overflow-hidden opacity-0 flex justify-center p-3 gap-3"
-            id="responsiveSearch"
+            class="kotak p-2 w-15 flex items-center transition-[width] duration-700 ease-in overflow-hidden absolute right-[8%] top-[16%] md:hidden"
+            id="kotak"
           >
+            <i class="bx bx-search text-3xl" onclick="showKotak()"></i>
             <input
               type="text"
-              placeholder="Type Something"
-              class="focus:outline-none p-5 border border-[#EC6090] text-white rounded-lg w-[80%]"
+              placeholder="Search...."
+              id="searchBar"
+              class="opacity-0 transition-opacity focus:outline-0 px-2 text-lg w-[60%]"
             />
-            <a href="javascript:void(0)" class="flex items-center lg:hidden">
-              <i
-                class="bx bx-x text-white text-2xl"
-                onclick="toggleSearch()"
-              ></i>
-            </a>
+            <a href="javascript:void(0)" class="hidden" id="btnX"
+              ><i class="bx bx-x text-sm" onclick="clearBtn()"></i
+            ></a>
           </div>
         </nav>
         <ul
@@ -131,9 +123,11 @@
         <div
           class="banner w-[90%] bg-[url(./image/bg.jpg)] bg-cover bg-no-repeat bg-left md:bg-center mt-10 h-full pt-40 pb-40 rounded-4xl sm:block md:block"
         >
-          <div class="text-lg md:text-4xl flex flex-col gap-1 md:gap-3 items-start md:p-3">
-            <p class="text-white ">welcome to cyborg</p>
-            <p class="text-pink-600 ">
+          <div
+            class="text-lg md:text-4xl flex flex-col gap-1 md:gap-3 items-start md:p-3"
+          >
+            <p class="text-white">welcome to cyborg</p>
+            <p class="text-pink-600">
               browse <span class="text-white">our popular</span
               ><span class="block text-white">games here</span>
             </p>

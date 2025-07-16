@@ -58,3 +58,32 @@ function toggleChevron(el) {
   image.classList.toggle("translate-x-[50%]");
   image.classList.toggle("md:translate-x-[80%]");
 }
+
+function showKotak() {
+  const show = document.getElementById("kotak");
+
+  if (show.classList.contains("w-15")) {
+    show.classList.remove("w-15");
+    show.classList.add("w-40","sm:w-80");
+  } else {
+    show.classList.add("w-15");
+    show.classList.remove("w-40", "sm:w-80");
+  }
+
+  const form = document.getElementById("searchBar");
+
+  if (form.classList.contains("opacity-0")) {
+    form.classList.remove("opacity-0");
+    form.classList.add("opacity-100");
+  } else {
+    form.classList.add("opacity-0");
+    form.classList.remove("opacity-100");
+  }
+
+  const btnX = document.getElementById("btnX")
+  btnX.classList.toggle("hidden")
+}
+
+function clearBtn() {
+  document.getElementById("searchBar").value = "";
+}
